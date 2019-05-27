@@ -15,7 +15,7 @@ Below are the methods supported in this library.
 |---|---|
 |open|Open the IP2Proxy BIN data with the help of **IP2Proxy C Library**.|
 |close|Close and clean up the file pointer.|
-|get_package_version|Get the package version (1 to 4 for PX1 to PX4 respectively).|
+|get_package_version|Get the package version (1 to 8 for PX1 to PX8 respectively).|
 |get_module_version|Get the module version.|
 |get_database_version|Get the database version.|
 |is_proxy|Check whether if an IP address was a proxy. Returned value:<ul><li>-1 : errors</li><li>0 : not a proxy</li><li>1 : a proxy</li><li>2 : a data center IP address</li></ul>|
@@ -26,6 +26,11 @@ Below are the methods supported in this library.
 |get_region|Return the ISO3166-2 region name of the proxy. Please visit <a href="https://www.ip2location.com/free/iso3166-2" target="_blank">ISO3166-2 Subdivision Code</a> for the information of ISO3166-2 supported|
 |get_city|Return the city name of the proxy.|
 |get_isp|Return the ISP name of the proxy.|
+|get_domain|Return the internet domain name associated with IP address range.|
+|get_usage_type|Return the usage type classification of ISP or company.|
+|get_asn|Return the autonomous system number (ASN).|
+|get_as_name|Return the autonomous system (AS) name.|
+|get_last_seen|Return the proxy last seen in days.|
 
 ## Requirements
 1. Python 2.7 and above
@@ -39,6 +44,23 @@ Below are the methods supported in this library.
 
 ## Testing
     python sample.py
+
+## Reference
+
+### Usage Type
+
+- (COM) Commercial
+- (ORG) Organization
+- (GOV) Government
+- (MIL) Military
+- (EDU) University/College/School
+- (LIB) Library
+- (CDN) Content Delivery Network
+- (ISP) Fixed Line ISP
+- (MOB) Mobile ISP
+- (DCH) Data Center/Web Hosting/Transit
+- (SES) Search Engine Spider
+- (RSV) Reserved
 
 ## Support
 Email: support@ip2location.com.
