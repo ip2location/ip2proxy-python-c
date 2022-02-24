@@ -31,6 +31,8 @@ Below are the methods supported in this library.
 |get_asn|Return the autonomous system number (ASN).|
 |get_as_name|Return the autonomous system (AS) name.|
 |get_last_seen|Return the proxy last seen in days.|
+|get_threat|Return the threat types reported to proxy's IP address or domain name.|
+|get_provider|Returns the VPN service provider name if available.|
 
 ## Requirements
 1. Python 2.7 and above
